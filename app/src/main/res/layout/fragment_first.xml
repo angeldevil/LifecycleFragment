@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:background="#948afd91"
+    android:paddingRight="10dp"
+    tools:context="me.angeldevil.lifecyclefragment.app.MainActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/second0"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="second 0"/>
+
+        <RadioButton
+            android:id="@+id/second1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="second 1"/>
+
+        <RadioButton
+            android:id="@+id/second2"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="second 2"/>
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/frag_second_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

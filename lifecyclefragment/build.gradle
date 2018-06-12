@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+
+ext {
+    bintrayRepo = 'Maven'
+    bintrayName = 'LifecycleFragment'
+
+    publishedGroupId = 'me.angeldevil'
+    libraryName = 'lifecyclefragment'
+    artifact = 'lifecyclefragment'
+
+    libraryDescription = 'A library to simplify fragment\'s lifecycle to onVisible & onInvisible'
+
+    siteUrl = 'https://github.com/angeldevil/LifecycleFragment'
+    gitUrl = 'https://github.com/angeldevil/LifecycleFragment.git'
+
+    libraryVersion = '1.0'
+
+    developerId = 'angeldevil'
+    developerName = 'AngelDevil'
+    developerEmail = 'angeldeviljy@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName libraryVersion
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "com.android.support:support-fragment:27.1.1"
+}
+
+apply from: 'https://raw.githubusercontent.com/aritraroy/LibUtils/master/install.gradle'
+apply from: 'https://raw.githubusercontent.com/aritraroy/LibUtils/master/upload.gradle'
