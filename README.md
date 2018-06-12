@@ -19,7 +19,7 @@ allprojects {
 
 ```
 dependencies {
-  compile 'me.angeldevil:lifecyclefragment:1.0'
+  compile 'me.angeldevil:lifecyclefragment:1.1'
 }
 ```
 
