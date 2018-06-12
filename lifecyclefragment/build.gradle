@@ -54,3 +54,5 @@ dependencies {
 
 apply from: 'https://raw.githubusercontent.com/aritraroy/LibUtils/master/install.gradle'
 apply from: 'https://raw.githubusercontent.com/aritraroy/LibUtils/master/upload.gradle'
+
+javadoc.failOnError = false
